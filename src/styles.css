@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 28px;
+}
+
+#header{
+    text-align: center;
+    margin: 12px;
+    padding-bottom: 20px;
+}
+
+li:first-child{
+    background-color: brown;
+    color: #fff;
+}
+
+.destak{
+    font-weight: bold;
+    font-size: 18px;
+}
