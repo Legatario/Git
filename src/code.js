@@ -33,3 +33,11 @@ const compra ={
 
 compra.description = "Macarrao instantaneo";
 console.log(compra);
+
+var a = 0;
+
+function teste(){
+    console.log(a)
+}
+
+teste()
