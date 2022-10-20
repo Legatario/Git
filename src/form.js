@@ -9,12 +9,26 @@ document.addEventListener("openModal",(e) =>{
     }
 });
 
-function onSubmit(event){
-    event.preventDefault()
-    console.log('sim')
+const handleSubmit = (onSubmit, onError, self) =>{
+    const nameInput = self.querySelector('input#username');
+    if(nameInput.value.length < 5){
+        return onError()
+    }
+    onSubmit()
+};
+
+const error = () =>{
+    console.log('error')
+};
+
+const submit = () =>{
+    console.log('submit')
 }
 
-form.addEventListener('submit', onSubmit);
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+    handleSubmit(submit, error, this)
+});
 
 window.addEventListener("scroll", (e)=>{
     if(window.scrollY === 0){
