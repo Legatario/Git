@@ -47,3 +47,22 @@ window.addEventListener("scroll", (e)=>{
     }
     
 })
+
+const functionPromise = async (condition) =>{
+            if(!condition){
+                throw new Error('The condition is false');
+            }
+        
+
+           return true;
+};
+
+functionPromise(true)
+    .then((res) => {
+        console.log(res);
+    })
+    .catch(() => {
+        console.log('error');
+    });
+
+
