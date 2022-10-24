@@ -66,3 +66,16 @@ functionPromise(true)
     });
 
 
+const numbers = [1,2,3,4,5]
+
+const numberObject = numbers.map((currentValue, index, array)=>{
+    return {number: currentValue}
+})
+
+console.log(numberObject)
+
+const numberWithout1 = numbers.filter((current)=>{
+    return current !== 1
+});
+
+console.log(numberWithout1)
